@@ -1,0 +1,50 @@
+.add-book {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20em;
+   
+}
+.add-book-options {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+ .add-book-options .style-inactive{
+   margin-bottom: 1rem;
+   padding-top: 0.3rem;
+   padding-bottom: 0.2rem;
+   border-color:  #01959a;
+   border: none;
+   text-decoration: none;
+   color: rgb(155, 153, 153);
+   background-color: white;
+   font-size: larger;
+   font-weight: bolder;
+} 
+.add-book-options .style-inactive:hover{
+    color: black;
+ }
+ .add-book-options .style-active{
+    margin-bottom: 1rem;
+   padding-top: 0.3rem;
+   padding-bottom: 0.2rem;
+   border-color:  #01959a;
+   border-top:none;
+   border-left:none;
+   border-right:none;
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   font-size: larger;
+   font-weight: bolder;
+ }
+ 
+.add-book h2{
+    font-weight: 650;
+    font-size: 2.5rem;
+}
+.add-book-form{
+    display: flex;
+    flex-direction: column;
+}
+

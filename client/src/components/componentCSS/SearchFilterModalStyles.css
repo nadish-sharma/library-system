@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap');
+.modal-overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    
+}
+.modal-filter{
+    position: fixed;
+    width: 40%;
+    height: 16em;
+    box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, .25);
+    margin: 0 auto;
+    box-sizing:border-box;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    position: fixed;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    left: 43%;
+    top: 34%;
+    z-index: 500000;
+    transform: translate(-50%, -50%);
+    border: 5px;
+    border-color: black;
+    
+}
+.modal-header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    
+}
+/* .modal-body {
+    position: fixed;
+} */
+.modal-body-list {
+    /* text-decoration: none; */
+    color : #222;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    list-style : none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size:large;
+    text-decoration: none;
+    color : #222;
+    padding : 0.7rem 1em;
+    white-space: nowrap;
+}
+
+.search-links {
+    background-color: rgb(218, 214, 214);
+    white-space: nowrap;
+    color:#222;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    /* margin-right: 10em; */
+    z-index: 100;
+    margin-right: 0.5em;
+}
+.search-list-body span {
+    
+  flex-grow: 1; /* Allow the description to grow and fill the available space */
+  margin-left: 0.5em; /* Adjust the spacing between the button and the description */
+  width: 100px; /* Set a fixed width for the description */
+}
+
+.search-links-clicked {
+    background-color: rgb(243, 243, 243);
+    white-space: nowrap;
+    color:#222;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0.5em;
+    z-index: 100;
+}
+/* .search-links-clicked button{
+    background-color:rgb(46, 169, 169);
+    color: white
+} */
+.search-list-body{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    cursor: pointer;
+}
+.search-list-body:hover{
+    background-color: rgb(243, 243, 243);
+}
+.search-list-body:hover button{
+    background-color:rgb(46, 169, 169);
+    color: white
+}
+
+.search-list-body-clicked{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: flex-start;
+}
+.search-list-body-clicked button{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    background-color: rgb(243, 243, 243);
+    background-color:rgb(46, 169, 169);
+    color: white
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    top: 8em;
+    width: 65%;
+    height: 20px;
+    /* box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, .25); */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(14rem, 0.5fr));
+    grid-gap: 20px;
+    box-sizing:border-box; 
+}
+
+@media screen and (max-width: 45em) {
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 8em;
+        width: 65%;
+        height: 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(14rem, 0.5fr));
+        grid-gap: 20px;
+        box-sizing:border-box; 
+    }
+    }
+    @media screen and (min-width: 45em) and (max-width: 65em) {
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            top: 8em;
+            width: 65%;
+            height: 20px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(14rem, 0.5fr));
+            grid-gap: 20px;
+            box-sizing:border-box; 
+        }}
